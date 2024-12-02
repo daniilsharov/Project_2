@@ -40,3 +40,15 @@ h1,h2 {
 }
 
 
+.movie-image{
+    height: auto;
+    width: 80px;;
+}
+
+.imagecss {
+    display: inline-flex;
+}
+
+.movies li {
+    padding-left: 12px;
+}
