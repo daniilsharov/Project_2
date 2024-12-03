@@ -1,4 +1,9 @@
-.navbar ul{
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: azure;
+}
+
+.navbar ul {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -7,16 +12,17 @@
     background-color: #000000;
 }
 
-.navbar li{
+.navbar li {
     padding: 30px;
 }
 
-.navbar li a{
+.navbar li a {
+    font-size: 18px;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration:none;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     color: #36b136;
 }
 
@@ -40,15 +46,112 @@ h1,h2 {
 }
 
 
-.movie-image{
-    height: auto;
-    width: 80px;;
+.movie-image {
+    height: 120px;
+    width: 100px;
+    border-radius: 10px;
 }
 
-.imagecss {
+.movie {
     display: inline-flex;
+    background-color: #c7bcbc;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 120px;
 }
 
 .movies li {
-    padding-left: 12px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.movies h3 {
+    font-size: 24px;
+}
+
+.movies dt,dd {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.movies dt{
+    font-weight: bold;
+}
+
+
+/* About us */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-image{
+    height: 200px;
+    width: auto;
+}
+
+
+/* Blog */
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.blog-post-preview {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-preview img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-post-preview h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.blog-post-preview p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.blog-post-preview a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-post-preview a:hover {
+    color: #36b136;
 }
