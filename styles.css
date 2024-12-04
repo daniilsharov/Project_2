@@ -13,7 +13,7 @@ body {
 }
 
 .navbar li {
-    padding: 30px;
+    padding: 20px;
 }
 
 .navbar li a {
@@ -28,6 +28,12 @@ body {
 
 h1,h2 {
     text-align: center;
+}
+
+h1 {
+    background-color: #000000;
+    margin: 1px;
+    color: #ffffff;
 }
 
 .details, .details2 {
@@ -77,6 +83,16 @@ h1,h2 {
 
 .movies dt{
     font-weight: bold;
+}
+
+.movies a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.movies a:hover .movie{
+    background-color: #333;
+    color: white;
 }
 
 
@@ -154,4 +170,45 @@ h1,h2 {
 
 .blog-post-preview a:hover {
     color: #36b136;
+}
+
+
+/* Contact form */
+
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(39, 231, 0, 0.2);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #36b136;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #2a8a2a;
 }
