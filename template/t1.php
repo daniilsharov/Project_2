@@ -8,9 +8,12 @@
 </head>
 <body>
     
-<?php
-    content();
-?>
+<body>
+    <?php
+    navbar();
+     content();
+      ?>
+</body>
 
 </body>
 </html>

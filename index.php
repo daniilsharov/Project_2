@@ -1,4 +1,4 @@
 <?php
 include('functions.php');
-include($content);
+include('template/t1.php');
 ?>

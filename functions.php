@@ -1,23 +1,31 @@
 <?php
 
-function navbar(){
-    echo 'Dynamic navigation:';
-$FolderContent=glob("content/*");
-foreach ($FolderContent as $file) {
-   $fileName = basename($file);
-   $linkAddress = "index.php?c=" . urlencode($file);
-   echo '<li style="padding:7px;display:inline;border:solid 1px"> <a style="color:black" href="' . $linkAddress . ' " > ' . $fileName . '</a></li>';
-}
-}
-
-
 function content(){
-if (!isset($_GET["c"])){
-   include("content/index.html");
+    if (!isset($_GET["c"])){
+        include("content/index.html");
+    } else {
+        $result = $_GET["c"];
+        if (file_exists($result)) {
+            include($result);
+        } else {
+            echo "<p>Page not found!</p>";
+        }
+    }
 }
-else {
-   $result=$_GET["c"];
-   include($result);
+
+
+
+function navbar() {
+    echo '
+    <section class="navbar">
+        <ul>
+            <li><a href="/index.php?c=content/index.html">Home</a></li>
+            <li><a href="/index.php?c=content/about.html">About us</a></li>
+            <li><a href="/index.php?c=content/blog.html">Blog</a></li>
+            <li><a href="/index.php?c=content/contact.html">Contact</a></li>
+        </ul>
+    </section>';
 }
-}
+
+
 ?>
