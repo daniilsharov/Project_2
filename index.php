@@ -1,3 +1,4 @@
 <?php
-include('content.php');
+include('functions.php');
+include($content);
 ?>
